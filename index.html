@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="GETFLIX — Descubra filmes, séries e animes: sinopses, elenco, avaliações, trailers oficiais e onde assistir legalmente.">
+  <meta name="theme-color" content="#080808">
+  
+  <!-- ✅ SEO -->
+  <meta name="keywords" content="filmes, series, anime, assistir online, cinema, getflix, streaming">
+  <meta name="author" content="GETFLIX">
+  <meta property="og:url" content="https://getflix-phi.vercel.app/">
+  
+  <title>GETFLIX</title>
+  <link rel="canonical" href="https://getflix-phi.vercel.app/">
+  
+  <!-- FAVICON -->
+  <link rel="icon" type="image/jpeg" href="/GETFLIX_LOGO.jpeg">
+  <link rel="apple-touch-icon" href="/GETFLIX_LOGO.jpeg">
+  
+  <!-- ✅ PRÉ-CARREGAR LOGÓTIPO -->
+  <link rel="preload" href="/GETFLIX_LOGO.jpeg" as="image">
+
+  <!-- Open Graph / redes sociais -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="GETFLIX">
+  <meta property="og:title" content="GETFLIX — Filmes, Séries e Animes">
+  <meta property="og:description" content="Descubra filmes, séries e animes: sinopses, elenco, avaliações, trailers oficiais e onde assistir legalmente.">
+  <meta property="og:image" content="/og-cover.jpg">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GETFLIX — Filmes, Séries e Animes">
+  <meta name="twitter:description" content="Sinopses, elenco, avaliações, trailers oficiais e onde assistir legalmente.">
+  <meta name="twitter:image" content="/og-cover.jpg">
+
+  <!-- ✅ JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "GETFLIX",
+    "url": "https://getflix-phi.vercel.app/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://getflix-phi.vercel.app/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  
+  <!-- ── PRÉ-CONEXÃO AOS SERVIDORES DE STREAMING ── -->
+  <link rel="preconnect" href="https://superflixapi.pro">
+  <link rel="preconnect" href="https://vidsrcme.ru">
+  <link rel="preconnect" href="https://vidlink.pro">
+  <link rel="preconnect" href="https://autoembed.co">
+
+  <!-- ── PRÉ-CONEXÃO AOS CDNs DE ANÚNCIO (opcional, mas ajuda) ── -->
+  <link rel="preconnect" href="https://pl30699757.effectivecpmnetwork.com">
+  <link rel="preconnect" href="https://www.highperformanceformat.com">
+  <link rel="preconnect" href="https://mistletoeframesethel.com">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/feather-icons" defer></script>
+</head>
+<body>
+
+<!-- ── HEADER ──────────────────────────────────────────────── -->
+<header id="header">
+  <div class="header-inner">
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <i data-feather="menu"></i>
+    </button>
+    <a href="/" class="logo">
+      <span class="logo-mark">▶</span>
+      <span class="logo-name">GETFLIX</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a class="nav-link active" href="#" data-cat="all"><i data-feather="home"></i> Início</a>
+      <a class="nav-link" href="#" data-cat="movie"><i data-feather="film"></i> Filmes</a>
+      <a class="nav-link" href="#" data-cat="tv"><i data-feather="tv"></i> Séries</a>
+      <a class="nav-link" href="#" data-cat="anime"><i data-feather="film"></i> Anime</a>
+      <a class="nav-link" href="#" data-cat="action"><i data-feather="zap"></i> Ação</a>
+      <a class="nav-link" href="#" data-cat="comedy"><i data-feather="smile"></i> Comédia</a>
+      <a class="nav-link" href="#" data-cat="horror"><i data-feather="moon"></i> Terror</a>
+    </nav>
+
+    <div class="hdr-right">
+      <button class="icon-btn" id="searchToggle" aria-label="Pesquisar" title="Pesquisar">
+        <i data-feather="search"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ── SOCIAL BAR (com async) ────────────────────────────────── -->
+<!-- ✅ ADSTERRA - Social Bar -->
+<script async src="https://pl30699757.effectivecpmnetwork.com/13/44/e4/1344e4b0977e3494d4154bad1976e3b0.js"></script>
+
+<!-- ── BANNER 468x60 (ADSTERRA - ADULTOS) ────────────────────── -->
+<!-- Substitui o antigo banner 300x250 -->
+<div class="ad-mobile" style="margin: 10px 0; padding: 0 20px;">
+  <div style="text-align:center; padding:8px 0; background:var(--surface); border-radius:var(--radius); border:1px solid var(--border);">
+    <script>
+      atOptions = {
+        'key' : 'b6f0d33a2b3d0e70da0de97fe108b74b',
+        'format' : 'iframe',
+        'height' : 60,
+        'width' : 468,
+        'params' : {}
+      };
+    </script>
+    <script src="https://mistletoeframesethel.com/b6f0d33a2b3d0e70da0de97fe108b74b/invoke.js"></script>
+  </div>
+</div>
+
+<!-- ── OVERLAY DO MENU MOBILE ─────────────────────────────────── -->
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<!-- ── SEARCH OVERLAY ────────────────────────────────────────── -->
+<div class="search-overlay" id="searchOverlay">
+  <div class="srch-wrap">
+    <input type="text" id="searchInput" placeholder="Pesquisar filmes, séries, animes…" autocomplete="off">
+    <button class="srch-close" id="searchClose" aria-label="Fechar pesquisa" title="Fechar">✕</button>
+  </div>
+  <div id="searchResults"></div>
+</div>
+
+<!-- ── HERO ──────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-bd" id="heroBd"></div>
+  <div class="hero-veil"></div>
+  <div class="hero-content">
+    <div class="hero-tags" id="heroTags"></div>
+    <h1 class="hero-title" id="heroTitle">A carregar…</h1>
+    <p class="hero-desc" id="heroDesc"></p>
+    <div class="hero-meta" id="heroMeta"></div>
+    <div class="hero-acts" id="heroActs"></div>
+  </div>
+  <div class="hero-nav">
+    <button class="hero-arr" id="heroPrev" aria-label="Anterior">‹</button>
+    <div class="hero-dots" id="heroDots"></div>
+    <button class="hero-arr" id="heroNext" aria-label="Próximo">›</button>
+  </div>
+</section>
+
+<!-- ── BANNER 320x50 (ADSTERRA - ADULTOS - MOBILE) ──────────── -->
+<!-- Substitui o antigo banner 728x90 -->
+<div class="ad-mobile" style="margin: 10px 0; padding: 0 20px;">
+  <div style="text-align:center; padding:8px 0; background:var(--surface); border-radius:var(--radius); border:1px solid var(--border);">
+    <script>
+      atOptions = {
+        'key' : 'b6d9e43a21dc6c1feaff00cd94f376bf',
+        'format' : 'iframe',
+        'height' : 50,
+        'width' : 320,
+        'params' : {}
+      };
+    </script>
+    <script src="https://mistletoeframesethel.com/b6d9e43a21dc6c1feaff00cd94f376bf/invoke.js"></script>
+  </div>
+</div>
+
+<!-- ── NATIVE BANNER (CARREGADO COM SEGURANÇA) ──────────────── -->
+<!-- ✅ ADSTERRA - Native Banner (já tem async) -->
+<div class="ad-native" style="padding:0 20px; margin: 10px 0;">
+  <div style="text-align:center; padding:16px 0; background:var(--surface); border-radius:var(--radius); border:1px solid var(--border);">
+    <div id="container-0e20e65da9c8fb4231e1c9039f261e83"></div>
+    <script>
+      (function() {
+        var container = document.getElementById('container-0e20e65da9c8fb4231e1c9039f261e83');
+        if (container) {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://pl30699758.effectivecpmnetwork.com/0e20e65da9c8fb4231e1c9039f261e83/invoke.js';
+          container.appendChild(script);
+        } else {
+          console.warn('⚠️ Container do Native Banner não encontrado.');
+        }
+      })();
+    </script>
+  </div>
+</div>
+
+<!-- ── FILTER BAR ─────────────────────────────────────────────── -->
+<div class="filter-bar" id="filterBar">
+  <button class="fpill on" data-cat="all"><i data-feather="home"></i> Tudo</button>
+  <button class="fpill" data-cat="movie"><i data-feather="film"></i> Filmes</button>
+  <button class="fpill" data-cat="tv"><i data-feather="tv"></i> Séries</button>
+  <button class="fpill" data-cat="anime"><i data-feather="film"></i> Anime</button>
+  <button class="fpill" data-cat="action"><i data-feather="zap"></i> Ação</button>
+  <button class="fpill" data-cat="comedy"><i data-feather="smile"></i> Comédia</button>
+  <button class="fpill" data-cat="horror"><i data-feather="moon"></i> Terror</button>
+  <button class="fpill" data-cat="romance"><i data-feather="heart"></i> Romance</button>
+  <button class="fpill" data-cat="scifi"><i data-feather="cpu"></i> Ficção Científica</button>
+  <button class="fpill" data-cat="documentary"><i data-feather="camera"></i> Documentário</button>
+</div>
+
+<!-- ── MAIN ───────────────────────────────────────────────────── -->
+<main id="main-content"></main>
+
+<!-- ── FOOTER ─────────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-in">
+    <div class="footer-logo">
+      <span class="logo-mark">▶</span>
+      <span class="logo-name">GETFLIX</span>
+    </div>
+
+    <!-- ✅ Links de compartilhamento social -->
+    <div class="footer-social">
+      <!-- WhatsApp -->
+      <a href="https://api.whatsapp.com/send?text=🎬%20Descubra%20filmes%20e%20s%C3%A9ries%20no%20GETFLIX!%20https://getflix-phi.vercel.app/" 
+         target="_blank" rel="noopener noreferrer" 
+         aria-label="Compartilhar no WhatsApp">
+        <i data-feather="message-circle"></i>
+      </a>
+      <!-- Telegram -->
+      <a href="https://t.me/share/url?url=https://getflix-phi.vercel.app/&text=🎬%20Descubra%20filmes%20e%20s%C3%A9ries%20no%20GETFLIX!" 
+         target="_blank" rel="noopener noreferrer" 
+         aria-label="Compartilhar no Telegram">
+        <i data-feather="send"></i>
+      </a>
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://getflix-phi.vercel.app/" 
+         target="_blank" rel="noopener noreferrer" 
+         aria-label="Compartilhar no Facebook">
+        <i data-feather="facebook"></i>
+      </a>
+      <!-- YouTube -->
+      <a href="https://www.youtube.com/results?search_query=getflix" 
+         target="_blank" rel="noopener noreferrer" 
+         aria-label="Ver no YouTube">
+        <i data-feather="youtube"></i>
+      </a>
+    </div>
+
+    <!-- Sobre o GETFLIX -->
+    <div class="footer-about">
+      <h3>🎬 Sobre o GETFLIX</h3>
+      <p>
+        GETFLIX é um projeto criado para amantes de cinema e séries.
+        Com uma interface moderna e intuitiva, oferecemos uma experiência completa
+        para descobrir, assistir e explorar o melhor do entretenimento.
+        <br><br>
+        <strong>Este site não hospeda nenhum arquivo de vídeo — apenas facilita o acesso
+        a conteúdos já disponíveis na web.</strong>
+        <br><br>
+        🎯 Feito com ❤️ para quem ama cinema.
+      </p>
+    </div>
+
+    <p class="footer-copy">© <span id="currentYear"></span> GETFLIX — Entretenimento sem limites</p>
+    <p class="footer-note"> GETFLIX Todos os direitos reservados. </p>
+  </div>
+</footer>
+
+<!-- ── GESTÃO DE ANÚNCIOS (AdManager) ────────────────────────── -->
+<!-- O Popunder e o Smartlink são agora geridos pelo AdManager (adManager.js) -->
+<!-- O AdManager é importado diretamente no main.js (módulo) -->
+
+<script type="module" src="main.js"></script>
+
+<script>
+  // Inicializa os ícones Feather
+  document.addEventListener('DOMContentLoaded', () => {
+    feather.replace();
+  });
+</script>
+</body>
+</html>
