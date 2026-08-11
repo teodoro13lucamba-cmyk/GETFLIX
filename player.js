@@ -69,12 +69,7 @@ function loadStream(season = null, episode = null) {
         } else {
             url = `https://superflixapi.pro/serie/${CID}/${s}/${e}`;
         }
-    } else if (currentServer === 'autoembed') {
-        if (CTYPE === "movie") {
-            url = `https://autoembed.co/movie/tmdb/${CID}`;
-        } else {
-            url = `https://autoembed.co/tv/tmdb/${CID}-${s}/${e}`;
-        }
+   
     } else if (currentServer === 'vidlink') {
         if (CTYPE === "movie") {
             url = `https://vidlink.pro/movie/${CID}`;
