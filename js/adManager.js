@@ -26,8 +26,11 @@ const CONFIG = {
   // URLs ADSTERRA (Atualizado para Adulto)
   // ================================================================
 
-  SMARTLINK_URL: 'https://mistletoeframesethel.com/ww4hunuu?key=0cd4361d235f3b3a393119bf84e3426e',
-  POPUNDER_URL: 'https://mistletoeframesethel.com/e3/21/a3/e321a3c9d3d78af9991cc926effbdec5.js',
+  // COLE AQUI A NOVA URL DO SMARTLINK ADULTO DO ADSTERRA
+  SMARTLINK_URL: 'COLE_AQUI_A_URL_DO_SMARTLINK_ADULTO',
+  
+  // COLE AQUI A NOVA URL DO SCRIPT DO POPUNDER ADULTO DO ADSTERRA
+  POPUNDER_URL: 'COLE_AQUI_A_URL_DO_POPUNDER_ADULTO',
 
   // ================================================================
   // LOCAL STORAGE
