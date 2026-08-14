@@ -1,6 +1,6 @@
 /**
  * ====================================================================
- * adManager.js - Gestor Centralizado de Anúncios (GETFLIX / Adsterra Adulto)
+ * adManager.js - Gestor Centralizado de Anúncios (GETFLIX / Adsterra)
  * ====================================================================
  */
 
@@ -23,14 +23,11 @@ const CONFIG = {
   ENABLE_POPUNDER: true,
 
   // ================================================================
-  // URLs ADSTERRA (Atualizado para Adulto)
+  // URLs ADSTERRA (Domínio: getflixfree.vercel.app)
   // ================================================================
 
-  // COLE AQUI A NOVA URL DO SMARTLINK ADULTO DO ADSTERRA
-  SMARTLINK_URL: 'COLE_AQUI_A_URL_DO_SMARTLINK_ADULTO',
-  
-  // COLE AQUI A NOVA URL DO SCRIPT DO POPUNDER ADULTO DO ADSTERRA
-  POPUNDER_URL: 'COLE_AQUI_A_URL_DO_POPUNDER_ADULTO',
+  SMARTLINK_URL: 'https://www.effectivecpmnetwork.com/habtc2qkw7?key=5ba17ad7efbd4daf587dc0efc0b477d3',
+  POPUNDER_URL: 'https://pl30841204.effectivecpmnetwork.com/6f/cb/dd/6fcbddbecb4b9c6e9f96be80a2734585.js',
 
   // ================================================================
   // LOCAL STORAGE
