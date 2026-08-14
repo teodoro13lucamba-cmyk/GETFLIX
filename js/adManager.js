@@ -1,6 +1,6 @@
 /**
  * ====================================================================
- * adManager.js - Gestor Centralizado de Anúncios (GETFLIX / Adsterra)
+ * adManager.js - Gestor Centralizado de Anúncios (GETFLIX / Monetag)
  * ====================================================================
  */
 
@@ -20,14 +20,18 @@ const CONFIG = {
   // ================================================================
 
   ENABLE_SMARTLINK: true,
-  ENABLE_POPUNDER: true,
+  // O Popunder agora é carregado globalmente via <script> no HTML
+  ENABLE_POPUNDER: false,
 
   // ================================================================
-  // URLs ADSTERRA (Domínio: getflixfree.vercel.app)
+  // URLs MONETAG (Domínio: getflixfree.vercel.app)
   // ================================================================
 
-  SMARTLINK_URL: 'https://www.effectivecpmnetwork.com/habtc2qkw7?key=5ba17ad7efbd4daf587dc0efc0b477d3',
-  POPUNDER_URL: 'https://pl30841204.effectivecpmnetwork.com/6f/cb/dd/6fcbddbecb4b9c6e9f96be80a2734585.js',
+  // Direct link · Efficient tag
+  SMARTLINK_URL: 'https://omg10.com/4/11574150',
+  
+  // O script do Popunder (Onclick) está no <head> do HTML
+  POPUNDER_URL: '',
 
   // ================================================================
   // LOCAL STORAGE
@@ -89,7 +93,7 @@ const AdManager = {
   },
 
   // ================================================================
-  // SMARTLINK
+  // SMARTLINK (LINK DIRETO MONETAG)
   // ================================================================
 
   openSmartlink() {
@@ -141,7 +145,7 @@ const AdManager = {
   },
 
   // ================================================================
-  // POPUNDER
+  // POPUNDER (Gerenciado globalmente pelo script no HTML)
   // ================================================================
 
   loadPopunder() {
